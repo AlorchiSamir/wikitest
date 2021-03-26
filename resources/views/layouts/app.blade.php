@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>Wikitest</title>
     <link rel="icon" href="{{url('graphics/icon.jpg')}}" />
 
     <!-- Scripts -->
@@ -18,9 +18,8 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
     <!-- Styles -->
-    <link href="{{ asset('css/wikipower.css') }}" rel="stylesheet">
+    <link href="{{ asset('resources/css/wikipower.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css" rel="stylesheet" />
@@ -31,8 +30,8 @@
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm top-bar">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    <img class='logo' src="{{url('graphics/logo.jpg')}}">
-                    {{ config('app.name', 'Laravel') }}
+                    
+                    Wikitest
                 </a>
                
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">

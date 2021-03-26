@@ -1,0 +1,15 @@
+Bonjour,
+
+Le dump SQL se trouve à la racine du projet dans le fichier : wikipower.sql
+
+Le lien pour l'api se compose ainsi : /api/ratecard/{id}/{day}/{night}
+exemple : /api/ratecard/1/25.2/125.3
+
+Etape de dev :
+
+1. Création de la DB et son remplissage : Car c'est la base de l'application. 
+2. Création du processus de formulaire : Affichage des fournisseurs -> Affichage du formulaire (par ajax) -> Affichage du résultat (sans total)
+3. Création de la méthode de calcul afin de récupérer le total annuel
+4. Création du point API
+5. Possibilité de revenir en arrière dans les étapes du formulaire. Utilisation de variables de session afin de préremplir les informations précédement encodées.
+6. Un peu de css pour rendre ça présentable

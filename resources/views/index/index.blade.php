@@ -4,8 +4,8 @@
 <div class='banner'>
 	<div class='container'>
 	    <ol class="breadcrumb-nav">
-	        <li class='breadcrumb-item'><a href="{{ url('/') }}">{{ __('home') }}</a></li>
-	        <li class="breadcrumb-item active">{{ __('metiers') }}</li>
+	        <li class='breadcrumb-item'><a href="{{ url('/') }}">Home</a></li>
+	        <li class="breadcrumb-item active">Carte tarifaire</li>
 	    </ol>
 	 
 	</div>

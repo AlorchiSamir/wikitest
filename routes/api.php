@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use \App\Http\Controllers\Api\RateCardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,6 +15,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+
+//Route::apiResource('ratecards', RateCardController::class);
+Route::apiResource('ratecard/{ratecard}/{day}/{night}/', RateCardController::class, ['parameters'
+    => ['{ratecard}' => 'id', '{day}' => 'day', '{night}' => 'night']]);
+

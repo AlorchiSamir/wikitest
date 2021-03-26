@@ -13,7 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [\App\Http\Controllers\IndexController::class, 'index']); 
-Route::get('/ratecard', [\App\Http\Controllers\RateCardController::class, 'index']); 
+Route::get('/', [\App\Http\Controllers\ProviderController::class, 'index']); 
+Route::get('/ratecard/{provider}', [\App\Http\Controllers\RateCardController::class, 'index']); 
+Route::post('/ratecard/ajax/list', [\App\Http\Controllers\RateCardController::class, 'Ajaxlist']);
+Route::post('/ratecard/submit', [\App\Http\Controllers\RateCardController::class, 'submit']);  
 
 

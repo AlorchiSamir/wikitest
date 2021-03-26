@@ -16,8 +16,7 @@ class RateCardRepository implements RepositoryInterface
 	}
 
 	public function save($datas){
-        $this->ratecard->name = $datas['name'];
-        $this->ratecard->color = $datas['color'];
+        $this->ratecard->type = $datas['type'];
         $this->ratecard->save();
 	}
 
@@ -26,23 +25,12 @@ class RateCardRepository implements RepositoryInterface
 	}
 
 	public function getAll(){
-		return null;
-		//return $this->ratecard->all();
+		
+		return $this->ratecard->all();
 	}
 
-	
-
-	public function getByType($type){
-		return $this->metier->where('type', '=', $type)->get();
+	public function getByProvider($provider_id){
+		return $this->ratecard->where('provider_id', '=', $provider_id)->get();
 	}
-
-	public function getAllExcept($metier){
-		return $this->metier->select('*')->where('name', '!=', $metier)->get();
-	}
-
-	public function getByName($name){
-		return $this->metier->where('name', '=', $name)->first();
-	}
-	
 
 }
