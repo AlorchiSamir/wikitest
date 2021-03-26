@@ -33,11 +33,11 @@
 
 		        <tr>
 		            <td>Votre consommation de jour</td>
-		            <td>{{ $submit['day_schedule'] }}</td>
+		            <td >{{ $submit['day_schedule'] }}</td>
 		        </tr>
 		        <tr>
 		            <td>Sous-total jour</td>
-		            <td>{{ $results['day'] }}</td>
+		            <td class='bold'>{{ $results['day'] }}</td>
 		        </tr>
 		        <tr>
 		            <td>Votre consommation de nuit</td>
@@ -45,14 +45,14 @@
 		        </tr>
 		        <tr>
 		            <td>Sous-total nuit</td>
-		            <td>{{ $results['night'] }}</td>
+		            <td class='bold'>{{ $results['night'] }}</td>
 		        </tr>
 		        <tr>
 		            <th colspan="2">Total</th>
 		        </tr>
 		        <tr>
 		            <td>Votre facture annuelle</td>
-		            <td>{{ $results['total'] }}</td>
+		            <td class='bold'>{{ $results['total'] }}</td>
 		        </tr>
 		   
 		</table>

@@ -21,8 +21,8 @@ class RateCard extends Model{
 		$distribution = $this->distribution;
 
 		$results = array();
-		$results['day'] = $day * ($this->day_schedule + $distribution->day_schedule);
-		$results['night'] = $night * ($this->night_schedule + $distribution->night_schedule);
+		$results['day'] = round($day * ($this->day_schedule + $distribution->day_schedule), 4);
+		$results['night'] = round($night * ($this->night_schedule + $distribution->night_schedule), 4);
 		$results['total'] = $results['day'] + $results['night'];
 
 		return $results;
